@@ -24,11 +24,12 @@ app.use((req, res, next) => {
 	next();
 });
 
+/*
 //Only uncomment out this when you WANT your website in maintenance mode
 app.use((req,res,next) => {
 	res.render('maintenance.hbs');
 });
-
+*/
 
 
 
@@ -52,6 +53,12 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
 	res.render('about.hbs',{
 		pageTitle: 'About Page',
+	});
+});
+
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs',{
+		pageTitle: 'Projects Page',
 	});
 });
 
