@@ -24,6 +24,7 @@ app.use((req, res, next) => {
 	next();
 });
 /*
+//Only uncomment out this when you WANT your website in maintenance mode
 app.use((req,res,next) => {
 	res.render('maintenance.hbs');
 });
